@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans|Lora|Playfair+Display|Slabo+27px&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #cbdde7;
+  font-family: 'Playfair Display', serif;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+
+}
+
+#title {
+  height: 100px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/** global classes styling **/
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 3px 10px 0px 10px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1em;
+  font-weight: 1000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 3px #916617 ridge;
+  border-radius: 50px;
+  text-shadow: 2px 2px 4px #916617;
+  background: transparent;
+  cursor: grabbing;
+  margin-bottom: 15px;
+}
+
+.grid {
+  display: flex;
+}
+
+header {
+  border-radius: 30px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  min-height: 75px;
+  padding: 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to right, #a1793c,  #f5e5cd, white);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+@media(max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  width: 70vw;
+}
+
+@media (max-width: 650px){
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.logo > img {
+  width: 250px;
+  height: 150px;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 5px 3px 5px   #523b10;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+}
+
+@media (max-width: 650px){
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul {
+  font-weight: bold;
+  margin-right: 9px;
+  margin-left: 25px;
+  width: 25vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+#cookies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 500px;
+  margin-top: 80px;
+  font-size: 25px;
+}
+
+#cookies > .img-title {
+  margin-bottom: 60px;
+  word-wrap: break-word;
+}
+
+#cookies input[type="email"]{
+  max-width: 290px;
+  width: 80%;
+  padding: 8px;
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+#cookies input[type="submit"]{
+  max-width: 250px;
+  width: 50%;
+  height: 50px;
+  margin: 15px 0px;
+  border: 0;
+}
+
+#cookies input[type="submit"]:hover {
+  background-color: #d0b176;
+  transition: background-color 3s;
+}
+
+@media (max-width: 650px) {
+  #cookies {
+    margin-top: 120px;
+
+  }
+}
+
+#menu {
+  margin-top: 30px;
+}
+
+.img-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 33px;
+  text-align: center;
+  padding: 50px;
+}
+
+p {
+  font-size: 20px;
+  font-family: 'Lora', serif;
+  font-weight: normal;
+  padding: 20px;
+  width: 550px;
+}
+
+h2 {
+  font-size: 30px;
+  padding: 20px;
+}
+
+#menu #description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 180px;
+  width: 40vw;
+  padding: 35px;
+}
+
+@media (max-width: 550px){
+  #menu #description {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px){
+  #menu {
+    margin-top: 0;
+  }
+}
+
+.how-its-made {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.how-its-made > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+.separator {
+  background-color:  #f5e5cd;
+  padding: 50px;
+  margin-top: 90px;
+  border-radius: 50px;
+}
+
+#recipes {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.baking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% /3);
+  margin: 60px;
+  border: 2px solid  #9a106e;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.baking > .level {
+  background-color:  #eeb9de;
+  color:  #650f4b;
+  font-size: 25px;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.baking > h3 {
+  margin-top: 15px;
+}
+
+.baking > ol {
+  margin: 15px 0;
+}
+
+.baking > ol > li {
+  padding: 5px 0;
+}
+
+.baking > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #891766;
+  color: white;
+  font-weight: 500;
+}
+
+.baking > button:hover {
+  background-color: #f087e3;
+  transition: background-color 2s;
+
+}
+
+@media (max-width: 800px) {
+  #recipes {
+    flex-direction: column;
+  }
+  .baking {
+    max-wdith: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #f087e3;
+  padding: 30px;
+  background-image: linear-gradient(to left, #a1793c,  #f5e5cd, white);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 25px 25px 0 0;
+}
+
+footer > ol {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ol > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #e6d4e4;
+}

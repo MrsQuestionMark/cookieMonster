@@ -1,2 +1,2 @@
 # cookieMonster
-Technical Documentation page for FCC. Could use some edits.
+Product Landing page for FCC. Could use some edits.
